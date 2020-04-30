@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetching covid19 Data | using browser's FETCH API</title>
+</head>
+<body>
+	<div id="my_sample_div"></div>
+</body>
+<script>
+	// function getNode (e) {return document.querySelector(e)} // return selected/specified html element
+	function consoleLog (i) {console.log(i)} // this prints data(the i) on the browser console
+	const api_subscription_key = 'b0aaacac86f44d898bf1b2df828f61dc'
+
+
+	const stats_edpoint_url = 'https://api.smartable.ai/coronavirus/stats/NG'
+	const news_edpoint_url = 'https://api.smartable.ai/coronavirus/news/US'
+	const options = {
+		method: 'get',
+		headers: {
+			'Subscription-Key': api_subscription_key,
+			'Cache-Control': 'no-cache'
+		}
+	}
+
+	// fetch api
+	fetch(stats_edpoint_url, options).then(
+		res=>{
+			if (res.ok) {
+				res.text()
+				.then(data=>{consoleLog(data)})
+			} else {
+				consoleLog('Error '+res.status+': '+res.statusText)
+			}
+		}).catch(
+		err=>{
+			consoleLog('Error: '+err.status+': '+err.statusText)
+		})
+</script>
+</html>
