@@ -1,2 +1,2 @@
 # AsyncTask-Fetch-API
-Making async requests to the server  using browser's FETCH API
+Making async requests to a server  using browser's FETCH API
