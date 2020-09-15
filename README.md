@@ -1,2 +1,2 @@
 # async-fetch
-Making async requests to a server  using browser's FETCH API
+Making async requests to a server  using browser's fetch API
