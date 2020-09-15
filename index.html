@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>async js</title>
+</head>
+<body>
+	<h2>Hello, asyncJS</h2>
+</body>
+<script src="async-fetch.js"></script>
+<script>
+	_get(`data.json`, res=>{
+		// const data = await res.text();
+		console.log(res);
+	}, err=>{
+		console.log(err);
+	});
+</script>
+</html>
