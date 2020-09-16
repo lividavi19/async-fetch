@@ -1,55 +1,55 @@
 // get data
-async function _get (url, success, fail) {
+async function _get (url, successCallback, failCallback) {
 	try {
 		const response = await fetch(url);
 		if (response.ok) {
-			success(response);
+			successCallback(response);
 		} else {
-			fail(response);
+			failCallback(response);
 		}
 	} catch (error) {
-		fail(error);
+		failCallback(error);
 	}
 }
 
 // post data
-async function _post (url, body, success, fail) {
+async function _post (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `post`, body: body});
 		if (response.ok) {
-			success(response);
+			successCallback(response);
 		} else {
-			fail(response);
+			failCallback(response);
 		}
 	} catch (error) {
-		fail(error);
+		failCallback(error);
 	}
 }
 
 // put data
-async function _put (url, body, success, fail) {
+async function _put (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `put`, body: body});
 		if (response.ok) {
-			success(response);
+			successCallback(response);
 		} else {
-			fail(response);
+			failCallback(response);
 		}
 	} catch (error) {
-		fail(error);
+		failCallback(error);
 	}
 }
 
 // delete data
-async function _delete (url, body, success, fail) {
+async function _delete (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `delete`, body: body});
 		if (response.ok) {
-			success(response);
+			successCallback(response);
 		} else {
-			fail(response);
+			failCallback(response);
 		}
 	} catch (error) {
-		fail(error);
+		failCallback(error);
 	}
 }
