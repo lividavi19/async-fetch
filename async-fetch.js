@@ -14,7 +14,7 @@ async function _get (url, successCallback, failCallback) {
 				blob: blobData
 			});
 		} else {
-			failCallback (error);
+			failCallback (response);
 		}
 	} catch (error) {
 		failCallback (error);
@@ -37,7 +37,7 @@ async function _post (url, body, successCallback, failCallback) {
 				blob: blobData
 			});
 		} else {
-			failCallback (error);
+			failCallback (response);
 		}
 	} catch (error) {
 		failCallback (error);
@@ -60,7 +60,7 @@ async function _put (url, body, successCallback, failCallback) {
 				blob: blobData
 			});
 		} else {
-			failCallback (error);
+			failCallback (response);
 		}
 	} catch (error) {
 		failCallback (error);
@@ -83,7 +83,7 @@ async function _delete (url, body, successCallback, failCallback) {
 				blob: blobData
 			});
 		} else {
-			failCallback (error);
+			failCallback (response);
 		}
 	} catch (error) {
 		failCallback (error);
