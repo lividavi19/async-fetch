@@ -2,11 +2,12 @@
 async function _get (url, successCallback, failCallback) {
 	try {
 		const response = await fetch(url);
-		const textData = await response.clone().text();
-		const jsonData = await response.clone().json();
-		const blobData = await response.clone().blob();
 		
 		if (response.ok) {
+			const textData = await response.clone().text();
+			const jsonData = await response.clone().json();
+			const blobData = await response.clone().blob();
+			
 			successCallback ({
 				response: response,
 				text: textData,
@@ -25,11 +26,12 @@ async function _get (url, successCallback, failCallback) {
 async function _post (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `post`, body: body});
-		const textData = await response.clone().text();
-		const jsonData = await response.clone().json();
-		const blobData = await response.clone().blob();
 
 		if (response.ok) {
+			const textData = await response.clone().text();
+			const jsonData = await response.clone().json();
+			const blobData = await response.clone().blob();
+			
 			successCallback ({
 				response: response,
 				text: textData,
@@ -48,11 +50,12 @@ async function _post (url, body, successCallback, failCallback) {
 async function _put (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `put`, body: body});
-		const textData = await response.clone().text();
-		const jsonData = await response.clone().json();
-		const blobData = await response.clone().blob();
 
 		if (response.ok) {
+			const textData = await response.clone().text();
+			const jsonData = await response.clone().json();
+			const blobData = await response.clone().blob();
+			
 			successCallback ({
 				response: response,
 				text: textData,
@@ -71,11 +74,12 @@ async function _put (url, body, successCallback, failCallback) {
 async function _delete (url, body, successCallback, failCallback) {
 	try {
 		const response = await fetch(url, {method: `delete`, body: body});
-		const textData = await response.clone().text();
-		const jsonData = await response.clone().json();
-		const blobData = await response.clone().blob();
 
 		if (response.ok) {
+			const textData = await response.clone().text();
+			const jsonData = await response.clone().json();
+			const blobData = await response.clone().blob();
+			
 			successCallback ({
 				response: response,
 				text: textData,
