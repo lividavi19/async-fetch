@@ -1,5 +1,5 @@
 // get data
-async function _get (url, successCallback, failCallback) {
+const _get = async (url, successCallback, failCallback) => {
 	try {
 		const response = await fetch(url);
 		
@@ -20,10 +20,10 @@ async function _get (url, successCallback, failCallback) {
 	} catch (error) {
 		failCallback (error);
 	}
-}
+};
 
 // post data
-async function _post (url, body, successCallback, failCallback) {
+const _post = async (url, body, successCallback, failCallback) => {
 	try {
 		const response = await fetch(url, {method: `post`, body: body});
 
@@ -44,10 +44,10 @@ async function _post (url, body, successCallback, failCallback) {
 	} catch (error) {
 		failCallback (error);
 	}
-}
+};
 
 // put data
-async function _put (url, body, successCallback, failCallback) {
+const _put = async (url, body, successCallback, failCallback) => {
 	try {
 		const response = await fetch(url, {method: `put`, body: body});
 
@@ -68,10 +68,10 @@ async function _put (url, body, successCallback, failCallback) {
 	} catch (error) {
 		failCallback (error);
 	}
-}
+};
 
 // delete data
-async function _delete (url, body, successCallback, failCallback) {
+const _delete = async (url, body, successCallback, failCallback) => {
 	try {
 		const response = await fetch(url, {method: `delete`, body: body});
 
@@ -92,4 +92,4 @@ async function _delete (url, body, successCallback, failCallback) {
 	} catch (error) {
 		failCallback (error);
 	}
-}
+};
