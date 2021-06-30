@@ -1,4 +1,4 @@
-// TODO: add request-headers support for each of the following method
+// TODO: add request-headers support for each of the following methods
 
 // get data
 const getData = async (url, successCallback, failCallback) => {
