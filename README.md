@@ -1,2 +1,2 @@
 # async-fetch
-Making async requests to a server  using browser's fetch API
+lightweight javascript library to make async requests to a server, it implements the browser's fetch api
