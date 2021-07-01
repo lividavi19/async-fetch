@@ -6,15 +6,11 @@ const getData = async (url, successCallback, failCallback) => {
 		const response = await fetch(url);
 		
 		if (response.ok) {
-			const response_text = await response.clone().text();
-			const response_json = await response.clone().json();
-			const response_blob = await response.clone().blob();
-			
 			successCallback ({
 				response: response,
-				text: response_text,
-				json: response_json,
-				blob: response_blob
+				text: await response.clone().text(),
+				json: await response.clone().json(),
+				blob: await response.clone().blob()
 			});
 		} else {
 			failCallback (response);
@@ -30,15 +26,11 @@ const postData = async (url, body, successCallback, failCallback) => {
 		const response = await fetch(url, {method: `post`, body: body});
 
 		if (response.ok) {
-			const response_text = await response.clone().text();
-			const response_json = await response.clone().json();
-			const response_blob = await response.clone().blob();
-			
 			successCallback ({
 				response: response,
-				text: response_text,
-				json: response_json,
-				blob: response_blob
+				text: await response.clone().text(),
+				json: await response.clone().json(),
+				blob: await response.clone().blob()
 			});
 		} else {
 			failCallback (response);
@@ -54,15 +46,11 @@ const putData = async (url, body, successCallback, failCallback) => {
 		const response = await fetch(url, {method: `put`, body: body});
 
 		if (response.ok) {
-			const response_text = await response.clone().text();
-			const response_json = await response.clone().json();
-			const response_blob = await response.clone().blob();
-			
 			successCallback ({
 				response: response,
-				text: response_text,
-				json: response_json,
-				blob: response_blob
+				text: await response.clone().text(),
+				json: await response.clone().json(),
+				blob: await response.clone().blob()
 			});
 		} else {
 			failCallback (response);
@@ -78,15 +66,11 @@ const deleteData = async (url, body, successCallback, failCallback) => {
 		const response = await fetch(url, {method: `delete`, body: body});
 
 		if (response.ok) {
-			const response_text = await response.clone().text();
-			const response_json = await response.clone().json();
-			const response_blob = await response.clone().blob();
-			
 			successCallback ({
 				response: response,
-				text: response_text,
-				json: response_json,
-				blob: response_blob
+				text: await response.clone().text(),
+				json: await response.clone().json(),
+				blob: await response.clone().blob()
 			});
 		} else {
 			failCallback (response);
