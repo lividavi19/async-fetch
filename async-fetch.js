@@ -13,8 +13,7 @@
 const getData = async (url, options, successCallback, failCallback) => {
 	try {
 		const response = await fetch(url, {
-			headers : options.headers,
-			body : options.body
+			headers : options.headers
 		});
 
 		// Check if response is ok
