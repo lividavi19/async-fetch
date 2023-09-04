@@ -3,11 +3,11 @@ Lightweight javascript library to make async requests to a server, it implements
 The library contains four utilities functions, each one will help a client make GET, POST, PUT and DELETE requests to a server.
 
 ## Table of Contents
-[Installation](#a---installation)
-[Usage](#b---usage)
-[Examples](#c---examples)
-[Error Handling](#d---error-handling)
-[Response Formats](#e---response-formats)
+[Installation](#a--installation)
+[Usage](#b--usage)
+[Examples](#c--examples)
+[Error Handling](#d--error-handling)
+[Response Formats](#e--response-formats)
 
 ## A : INSTALLATION
 To start making HTTP requests in your project, include the library to your source code as follows;
@@ -32,10 +32,10 @@ A callback function used to handle successful response. It receives an object co
 iv) Failure Callback
 A callback function used to handle errors that may occur during the fetch operation.
 
-## C - EXAMPLES
+## C : EXAMPLES
 
 
-## D - ERROR HANDLING
+## D : ERROR HANDLING
 
 
-## E - RESPONSE FORMATS
+## E : RESPONSE FORMATS
