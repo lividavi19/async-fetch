@@ -3,11 +3,11 @@ Lightweight javascript library to make async requests to a server, it implements
 The library contains four utilities functions, each one will help a client make GET, POST, PUT and DELETE requests to a server.
 
 ## Table of Contents
-[Installation](#INSTALLATION)
-[Usage](#USAGE)
-[Examples](#EXAMPLES)
-[Error Handling](#ERRORHANDLING)
-[Response Formats](#RESPONSEFORMATS)
+[Installation](#installation)
+[Usage](#usage)
+[Examples](#examples)
+[Error Handling](#error-handling)
+[Response Formats](#response-formats)
 
 ## A : INSTALLATION
 To start making HTTP requests in your project, include the library to your source code as follows;
