@@ -12,7 +12,7 @@ The library contains four utilities functions, each one will help a client make 
 ## A : INSTALLATION
 To start making HTTP requests in your project, include the library to your source code as follows;
 
-`<script src="/Path/async-fetch.js"></script>`
+```<script src="/Path/async-fetch.js"></script>```
 
 Replace "/Path/async-fetch.js" with the actual path to the JS file containing the utility functions (the library).
 
