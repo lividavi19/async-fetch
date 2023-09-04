@@ -2,21 +2,21 @@
 Lightweight javascript library to make async requests to a server, it implements the browser's fetch API.
 The library contains four utilities functions, each one will help a client make GET, POST, PUT and DELETE requests to a server.
 
-# Table of Contents
-Installation
-Usage
-Examples
-Error Handling
-Response Formats
+## Table of Contents
+[Installation](#Installation)
+[Usage](#Usage)
+[Examples](#Examples)
+[Error Handling](#ErrorHandling)
+[Response Formats](#ResponseFormats)
 
-# A : INSTALLATION
+## A : INSTALLATION
 To start making HTTP requests in your project, include the library to your source code as follows;
 
-<script src="/Path/async-fetch.js"></script>
+`<script src="/Path/async-fetch.js"></script>`
 
 Replace "/Path/async-fetch.js" with the actual path to the JS file containing the utility functions (the library).
 
-# B : USAGE
+## B : USAGE
 All utility functions in this library have the following in common;
 
 i) URL
@@ -32,10 +32,10 @@ A callback function used to handle successful response. It receives an object co
 iv) Failure Callback
 A callback function used to handle errors that may occur during the fetch operation.
 
-# C - EXAMPLES
+## C - EXAMPLES
 
 
-# D - ERROR HANDLING
+## D - ERROR HANDLING
 
 
-# E - RESPONSE FORMATS
+## E - RESPONSE FORMATS
