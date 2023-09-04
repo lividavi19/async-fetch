@@ -33,10 +33,10 @@ iv) Failure Callback
 A callback function used to handle errors that may occur during the fetch operation.
 
 ## C : EXAMPLES
-_This section is being prepared, please come back later!_
+_This section is currently being prepared, please come back later!_
 
 ## D : ERROR HANDLING
-_This section is being prepared, please come back later!_
+_This section is currently being prepared, please come back later!_
 
 ## E : RESPONSE FORMATS
-_This section is being prepared, please come back later!_
+_This section is currently being prepared, please come back later!_
