@@ -12,7 +12,9 @@ The library contains four utilities functions, each one will help a client make 
 ## A : INSTALLATION
 To start making HTTP requests in your project, include the library to your source code as follows;
 
-```<script src="/Path/async-fetch.js"></script>```
+```
+<script src="/Path/async-fetch.js"></script>
+```
 
 Replace "/Path/async-fetch.js" with the actual path to the JS file containing the utility functions (the library).
 
@@ -24,7 +26,7 @@ Each function requires a URL parameter that specifies the location to which the 
 
 ii) Options object
 This is an object used to customize the request. This object can include properties such as headers, body, etc.
-Sometimes your code may not require to pass headers object, in this case pass an empty object {} as an argument to avoid getting unexpeted results.
+Sometimes your code may not require to pass headers object, in this case pass an empty object `{}` as an argument to avoid getting unexpeted results.
 
 iii) Success Callback
 A callback function used to handle successful response. It receives an object containing various response formats like JSON, TEXT and BLOB.
