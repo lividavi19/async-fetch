@@ -21,7 +21,7 @@ Replace "/Path/async-fetch.js" with the actual path to the JS file containing th
 ## B : USAGE
 All utility functions in this library have the following in common;
 
-### i) URL
+### i) Url
 Each function requires a URL parameter that specifies the location to which the HTTP request will be made.
 
 ### ii) Options object
