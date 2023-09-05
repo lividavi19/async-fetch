@@ -24,7 +24,7 @@ All utility functions in this library have the following in common;
 ### i) Url
 Each function requires a URL parameter that specifies the location to which the HTTP request will be made.
 
-### ii) Options object
+### ii) Options Object
 This is an object used to customize the request. This object can include properties such as headers, body, etc.
 Sometimes your code may not require to pass headers object, in this case pass an empty object `{}` as an argument to avoid getting unexpeted results.
 
